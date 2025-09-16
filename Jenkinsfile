@@ -24,8 +24,8 @@ pipeline {
         stage('Clone Git Repo') {
             steps {
                 checkout([$class: 'GitSCM',
-                          branches: [[name: '*/master']],
-                          userRemoteConfigs: [[url: 'https://github.com/udemy03/your-repo.git']]
+                          branches: [[name: '*/main']],
+                          userRemoteConfigs: [[url: 'https://github.com/VR-123-v/jenkeins_aws.git']]
                 ])
             }
         }
